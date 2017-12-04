@@ -8,7 +8,7 @@ require 'glutton_ratelimit'
 class Test::Unit::TestCase
 end
 
-def timed_run ratelimiter, passes = 1
+def timed_run(ratelimiter, passes = 1)
   before_last_invocation = 0
   start_time = Time.now
   ratelimiter.times(passes * ratelimiter.executions + 1) do

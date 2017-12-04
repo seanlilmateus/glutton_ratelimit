@@ -7,7 +7,7 @@ module GluttonRatelimit
       @timestamps[0]
     end
     
-    def current_timestamp= new_stamp
+    def current_timestamp=(new_stamp)
       @timestamps.push(new_stamp).shift
     end
       
